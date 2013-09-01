@@ -1,7 +1,7 @@
 array=( $(find . -name $1 -type d) )
 if [ "${#array[@]} " -eq "0" ]; then
 	echo "Sorry no directory exists"
-	return
+	kill -INT $$
 fi
 
 if [ "${#array[@]} " -eq "1" ]; then
