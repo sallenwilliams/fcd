@@ -18,8 +18,8 @@ else
 
     echo ""
 	read -p "Which directory do you want to cd to? " selection
-	echo "changing to ${array[$selection]}"
 	cd ${array[$selection]}
+	pwd
 fi
 
 
