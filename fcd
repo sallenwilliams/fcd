@@ -1,0 +1,28 @@
+array=( $(find . -name $1 -type d) )
+if [ "${#array[@]} " -eq "0" ]; then
+	echo "Sorry no directory exists"
+	return
+fi
+
+if [ "${#array[@]} " -eq "1" ]; then
+	cd ${array[0]}
+	pwd
+else
+	index=0
+	for i in "${array[@]}"
+	do
+		echo "$index: $i"
+		let "index++"
+	done
+
+
+    echo ""
+	read -p "Which directory do you want to cd to? " selection
+	echo "changing to ${array[$selection]}"
+	cd ${array[$selection]}
+fi
+
+
+
+
+
