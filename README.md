@@ -1,7 +1,7 @@
 fcd
 ===
 
-This little command line script allows you to easily switch to a directory starting at the current directory.   What is so magically about this command?  Well it can be nested very deep from your current location.    The "find" command is utilized so any wild card matching that you can do in find you can do with fcd.
+This little command line script allows you to easily switch to a directory starting at the current directory.   What is so magical about this command?  Well it can be nested very deep from your current location.    The "find" command is utilized so any wild card matching that you can do in find you can do with fcd.
 
 If multiple matches are found you will be prompted with a list and you can choose which one you really meant.
 
